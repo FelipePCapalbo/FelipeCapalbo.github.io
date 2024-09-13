@@ -39,53 +39,30 @@ body {
     line-height: 1.5;
 }
 
-/* Estilização do cabeçalho e rodapé */
-header, footer {
-    background-color: var(--cor-primaria);
-    color: var(--cor-fonte);
-    padding: 1em 0;
+/* Estilização da seleção de idioma */
+.language-selection {
     text-align: center;
+    padding-top: 100px;
 }
 
-/* Estilização do menu de navegação */
-nav ul {
-    list-style: none;
-    padding: 0;
-    background-color: var(--cor-secundaria);
-    margin: 0;
-    overflow: hidden;
+.language-selection h1 {
+    font-size: 2em;
 }
 
-nav li {
+.language-selection p {
+    font-size: 1.2em;
+}
+
+.flags {
+    margin-top: 50px;
+}
+
+.flags a {
     display: inline-block;
-    margin: 0;
+    margin: 0 20px;
 }
 
-nav a {
-    display: block;
-    padding: 1em;
-    color: var(--cor-fonte);
-    text-decoration: none;
-}
-
-nav a:hover {
-    background-color: var(--cor-primaria);
-}
-
-/* Estilização do conteúdo principal */
-main {
-    padding: 4em 6em;
-    max-width: 800px;
-    margin: 0 auto;
-}
-
-/* Estilização dos títulos */
-h1, h2 {
-    color: var(--cor-fonte);
-}
-
-/* Ajuste das listas */
-ul {
-    list-style-type: disc;
-    margin-left: 2em;
+.flags img {
+    width: 150px;
+    height: auto;
 }
