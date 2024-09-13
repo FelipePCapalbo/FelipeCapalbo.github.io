@@ -1,35 +1,78 @@
+:root {
+    --cor-primaria: #808080; /* Cinza médio */
+    --cor-secundaria: #FFD700; /* Amarelo (Gold) */
+    --cor-fonte: #000000; /* Preto */
+    --cinza-claro: #D3D3D3; /* Cinza claro */
+    --cinza-escuro: #505050; /* Cinza escuro */
+}
+
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Computer Modern', serif;
+    color: var(--cor-fonte);
+    margin: 0;
+    padding: 0;
+    background: radial-gradient(circle at center, var(--cinza-claro) 0%, var(--cinza-escuro) 100%);
+}
+
+header, footer {
+    background-color: var(--cor-primaria);
+    color: var(--cor-fonte);
+    padding: 1em 0;
     text-align: center;
-    padding-top: 50px;
 }
 
-.language-selection h1 {
-    font-size: 2em;
+nav ul {
+    list-style: none;
+    padding: 0;
+    background-color: var(--cor-secundaria);
+    margin: 0;
+    overflow: hidden;
 }
 
-.language-selection p {
-    font-size: 1.2em;
-}
-
-.buttons {
-    margin-top: 30px;
-}
-
-.buttons a {
+nav li {
     display: inline-block;
-    margin: 0 20px;
-    text-decoration: none;
-    color: #2c3e50;
+    margin: 0;
 }
 
-.buttons img {
-    width: 100px;
-    height: auto;
-}
-
-.buttons span {
+nav a {
     display: block;
-    margin-top: 10px;
-    font-size: 1em;
+    padding: 1em;
+    color: var(--cor-fonte);
+    text-decoration: none;
 }
+
+nav a:hover {
+    background-color: var(--cor-primaria);
+}
+
+main {
+    padding: 2em;
+}
+
+h1, h2 {
+    color: var(--cor-fonte);
+}
+
+/* Importando as fontes */
+@font-face {
+    font-family: 'Computer Modern';
+    src: url('fonts/CMU-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Computer Modern';
+    src: url('fonts/CMU-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Computer Modern';
+    src: url('fonts/CMU-Italic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+
+/* Adicione quaisquer outros estilos necessários */
