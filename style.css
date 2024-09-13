@@ -1,19 +1,45 @@
+/* Definição das variáveis de cor */
 :root {
-    --cor-primaria: #808080; /* Cinza médio */
-    --cor-secundaria: #FFD700; /* Amarelo (Gold) */
-    --cor-fonte: #000000; /* Preto */
+    --cor-primaria: #808080; /* Cinza (cor primária) */
+    --cor-secundaria: #FFD700; /* Amarelo (cor secundária) */
+    --cor-fonte: #000000; /* Preto (cor da fonte) */
     --cinza-claro: #D3D3D3; /* Cinza claro */
     --cinza-escuro: #505050; /* Cinza escuro */
 }
 
+/* Importação da fonte Computer Modern */
+@font-face {
+    font-family: 'Computer Modern';
+    src: url('fonts/CMU-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Computer Modern';
+    src: url('fonts/CMU-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Computer Modern';
+    src: url('fonts/CMU-Italic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+
+/* Estilização do corpo do documento */
 body {
     font-family: 'Computer Modern', serif;
     color: var(--cor-fonte);
     margin: 0;
     padding: 0;
-    background: radial-gradient(circle at center, var(--cinza-claro) 0%, var(--cinza-escuro) 100%);
+    background: radial-gradient(circle at center, var(--cinza-claro), var(--cinza-escuro));
+    line-height: 1.5;
 }
 
+/* Estilização do cabeçalho e rodapé */
 header, footer {
     background-color: var(--cor-primaria);
     color: var(--cor-fonte);
@@ -21,6 +47,7 @@ header, footer {
     text-align: center;
 }
 
+/* Estilização do menu de navegação */
 nav ul {
     list-style: none;
     padding: 0;
@@ -45,34 +72,20 @@ nav a:hover {
     background-color: var(--cor-primaria);
 }
 
+/* Estilização do conteúdo principal */
 main {
-    padding: 2em;
+    padding: 4em 6em;
+    max-width: 800px;
+    margin: 0 auto;
 }
 
+/* Estilização dos títulos */
 h1, h2 {
     color: var(--cor-fonte);
 }
 
-/* Importando as fontes */
-@font-face {
-    font-family: 'Computer Modern';
-    src: url('fonts/CMU-Regular.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
+/* Ajuste das listas */
+ul {
+    list-style-type: disc;
+    margin-left: 2em;
 }
-
-@font-face {
-    font-family: 'Computer Modern';
-    src: url('fonts/CMU-Bold.ttf') format('truetype');
-    font-weight: bold;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Computer Modern';
-    src: url('fonts/CMU-Italic.ttf') format('truetype');
-    font-weight: normal;
-    font-style: italic;
-}
-
-/* Adicione quaisquer outros estilos necessários */
